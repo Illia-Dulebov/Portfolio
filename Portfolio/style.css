@@ -1,5 +1,4 @@
 .rectangle_top {
-    display: block;
     position: relative;
     width: 1905px;
     height: 152px;
@@ -108,16 +107,23 @@ a:hover {
     margin-top: -20px;
 }
 .text_hobby {
-    text-align: center;
+    text-align: -webkit-center;
     font-size: 55px;
     font-family: 'Montserrat SemiBold', sans-serif;
     color: #777777;
     margin-top: 45px;
 }
 .container_hobby {
+    width: 1890px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+@media (max-width: 700px) {
+    .container_hobby {
+        flex-direction: column;
+    }
 }
 .container_hobby div {
     text-align: center;
@@ -126,10 +132,10 @@ a:hover {
     width: 535px;
     height: 709px;
     line-height: 709px;
-    margin-right: 35px;
+    margin-right: 120px;
 }
 .container_hobby_element_1 {
-    margin-left: 40px;
+    margin-left: 120px;
 }
 
 .container_hobby img {
@@ -155,6 +161,7 @@ a:hover {
     transition: color 0.8s;
 }
 .container_skills {
+    width: 1890px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,15 +230,6 @@ a:hover {
     text-align: left;
     margin-left: 30px;
     padding-top: 140px;
-}
-.vertical_line {
-    border-left: 2px solid #707070;
-    height: 550px;
-    position: absolute;
-    left: 52%;
-    margin-top: 3150px;
-    margin-left: -35px;
-    top: 0;
 }
 .contacts_head {
     text-align: left;
