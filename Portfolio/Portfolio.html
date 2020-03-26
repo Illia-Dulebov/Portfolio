@@ -1,76 +1,393 @@
-<!DOCTYPE html>
-<html lang="ukr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ілля Дулєбов</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class = "rectangle_top">
-        <img src = "images/log2o.png" alt = "Logo" class = "logo_image">
-        <p class = "logo_text">Ілля Дулєбов</p>
-        <ul>
-            <a href="#" class = "rectangle_menu_left">Більше</a>
-            <a href="#">Контакти</a>
-            <a href="#">Портфоліо</a>
-            <a href="#">Про мене</a>
-        </ul>
-    </div>
-    <div class = "rectangle_pink">
-        <img src = "images/photo.jpg" height="679" width="545" alt = "Logo" class = "photo">
-        <p class = "text_hello">Привіт!</p>
-        <p class = "text_info">Коротка інформація про мене</p>
-        <p class = "text_content">Ім'я: Ілля<br>Призвіще: Дулебов<br>Вік: 18<br>Місце: Україна, Київ<br>
-            Телефон: +380957907177<br><br>Я студент КПІ,<br> новачок у програмуванні і<br> просто класний хлопець</p>
-    </div>
-    <p class = "text_hobby"><br>Мої хоббі та інтереси</p>
-    <div class = "container_hobby">
-        <div class = "container_hobby_element_1"><img src ="images/dev.png" alt = "Photo" align="top">
-            <p><br>Минулого року я почав вчити<br>програмування. За рік я спробував<br>кілька мов, але моя улюблена
-                стала Python.<br> <a href = "#">Клацніть</a>, щоб побачити мої проекти!<br>Можливо, вони будуть вам
-                корисні.</p>
-        </div>
-        <div><img src ="images/gamepad.png" alt = "Photo" align="top">
-            <p><br>Я люблю грати в ігри. На мою думку<br>геймерське співтовариство - найкраща
-                <br>спільнота у світі! Приєднуйся до мене <br>у групах та соціальних мережах і
-                <br>почнемо грати разом!</p>
-        </div>
-        <div><img src ="images/book.png" alt = "Photo" align="top">
-            <p><br>Читання - це моя улюблене заняття, <br>коли в мене є трохи вільного часу.
-                <br>Я люблю читати різну фантастику. <br>Ці книги пробуджують почуття  дослідження в мені!</p>
-        </div>
-    </div>
-    <p class = "text_hobby"><br>Мої навички та характер</p>
-    <div class = "container_skills">
-        <div class = "container_skills_element_1"><img src ="images/com.png" alt = "Photo" align="top">
-            <p><br>Останнім часом я почав займатися комп’ютерними науками та програмуванням. Протягом деякого часу
-                я здобув деякі навички: <br>- Вивчив деякі мови програмування: C ++, C, Python, Java.
-                <br>- Розвинув мої знання про бази даних та їх архітектуру комп'ютера</p>
-        </div>
-        <div class = "container_skills_element_2"><img src ="images/loop.png" alt = "Photo" align="top">
-            <p><br>Мій характер легкий і добрий. Я хочу<br>підкреслити деякі особливості моєї особистості:
-                <br>- Досить поступливий<br>- Цілеспрямований<br>- Розумний<br></p>
-        </div>
-    </div>
-    <div class = "rectangle_pink_2">
-        <div class = "contacts_social">
-            <p><a href="#"><img src = "images/twitter.png" class = "contacts_twitter" border="0"></a></p>
-            <p><a href="#"><img src = "images/instagram.png" class = "contacts_inst" border="0"></a></p>
-            <p><a href="#"><img src = "images/facebook.png" class = "contacts_facebook" border="0"></a></p>
-            <div class = "white_box_1"><p>Повідомлення...</p>
-                <div class = "button"><a href="#">Відправити</a></div>
-            </div>
-        </div>
-        <p class = "contacts_head">Зв'яжіться зі мною...</p>
-        <p class = "contacts_text">Найкращий спосіб спілкуватися<br> зі мною це електронна пошта,
-            <br>але не соромтеся писати мені у соцмережаx,<br> я буду дуже радий почути ваш відгук!</p>
-    </div>
-    <div class = "rectangle_bot">
-        <a href = "https://mail.google.com/mail/u/0/" class = "footer_text_head">Пошта:<br>namenlosenleute@gmail.com</a><br>
-        <a href = "https://t.me/Meaningles" class = "footer_text_head">Телеграм:<br> https://t.me/Meaningles</a><br>
-        <a href = "#" class = "footer_text_head">Телефон:<br>+380957907177</a><br>
-    </div>
-</body>
-</html>
+body {
+    margin: 0;
+    padding: 0;
+}
+.rectangle_pink_2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 750px;
+    background: #F9F1F2;
+    margin-top: 30px;
+}
+.header {
+    background: #131F3B;
+    height: 152px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header .menu ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 80px;
+}
+.header .logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 110px;
+}
+.header .logo p{
+    font-family: 'Monsterrat Semidbold', sans-serif;
+    font-size: 40px;
+    color: #B7B7B7;
+    margin-left: 10px;
+}
+
+.header .menu ul li {
+    margin: 20px 20px;
+}
+
+.header .menu ul a {
+    font-family: 'Monsterrat Regular', sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    color: #B7B7B7;
+}
+.header .menu ul a:hover {
+    color: #ffe;
+    transition: 0.5s all;
+}
+@media screen and (max-width: 1365px) {
+    .header .menu ul {
+        flex-direction: column;
+    }
+    .header {
+        height: 200px;
+    }
+    .header .menu ul li {
+        margin-top: -5px;
+    }
+}
+.part_2 {
+    background: #F9F1F2;
+    height: 940px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.part_2 .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.part_2 .text_hello {
+    margin-left: 15px;
+    font-family: 'Monsterrat Semibold', sans-serif;
+    font-size: 40px;
+    color: #777777;
+}
+.part_2 .text_info {
+    font-family: 'Monsterrat Medium', sans-serif;
+    font-size: 35px;
+    color: #777777;
+    margin-top: -30px;
+}
+.part_2 img {
+    height: 679px;
+    margin-left: 202px;
+    border: 3px solid #131F38
+}
+.part_2 ul {
+    margin-top: -10px;
+}
+.part_2 ul li {
+    list-style-type: none;
+    margin-top: -10px;
+}
+.part_2 ul li p{
+    font-family: 'Monsterrat Regular', sans-serif;
+    font-size: 25px;
+    list-style: none;
+    text-decoration: none;
+    color: #777777;
+}
+
+.text_hobby {
+    text-align: center;
+    font-size: 55px;
+    font-family: 'Montserrat SemiBold', sans-serif;
+    color: #777777;
+}
+
+.container_hobby {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.container_hobby div {
+    text-align: center;
+    background: #F9F1F2;
+    border: 1px solid #131F3B;
+    width: 490px;
+    height: 709px;
+    line-height: 709px;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+.container_hobby img {
+    margin-top: 100px;
+}
+.container_hobby p {
+    text-align: left;
+    font-size: 23px;
+    line-height: 32px;
+    font-family: 'Montserrat Regular', sans-serif;
+    color: #777777;
+    margin-top: -460px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+.container_hobby a {
+    text-decoration: none;
+    list-style-type: none;
+    color: indigo;
+}
+.container_hobby a:hover {
+    color: lightblue;
+    transition: color 0.8s;
+}
+.container_skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_skills div {
+    width: 739px;
+    height: 729px;
+    line-height: 709px;
+    text-align: center;
+}
+.container_skills_element_1 {
+    margin-right: 100px;
+}
+.container_skills_element_2 {}
+.container_skills img {
+    margin-top: 15px;
+}
+.container_skills_element_1 img {
+    margin-left: -30px;
+}
+
+.container_skills_element_2 img {
+    margin-left: 50px;
+}
+
+.container_skills p {
+    text-align: left;
+    font-size: 23px;
+    line-height: 32px;
+    font-family: 'Montserrat Regular', sans-serif;
+    color: #777777;
+    margin-left: 180px;
+    margin-top: -300px;
+}
+.container_skills_element_2  p {
+    margin-top: -309px;
+}
+.container_skills_element_1  p {
+    margin-left: 90px;
+}
+.rectangle_pink_2 .social.social_photos {
+    display: flex;
+    flex-direction: row;
+}
+.rectangle_pink_2 .social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+    margin-left: 100px;
+}
+.rectangle_pink_2 .social p {
+    font-size: 50px;
+    font-family: 'Montserrat SemiBold', sans-serif;
+    color: #777777;
+    margin-top: -30px;
+}
+.rectangle_pink_2 .social .top_height {
+    margin-top: 30px;
+}
+.rectangle_pink_2 .social .contacts_text {
+    font-size: 40px;
+    font-family: 'Montserrat SemiBold', sans-serif;
+    color: #777777;
+}
+.rectangle_pink_2 .send_box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+.white_box_1 {
+    background: white;
+    border: 1px solid #131F3B;
+    width: 650px;
+    height: 400px;
+    margin-top: 160px;
+    line-height: 20px;
+}
+.white_box_1 p {
+    font-size: 20px;
+    font-family: 'Montserrat SemiBold', sans-serif;
+    color: #777777;
+    margin-left: 20px;
+}
+.rectangle_pink_2 .send_box .button a  {
+    background: white;
+    width: 210px;
+    height: 46px;
+    border: 1px solid #131F3B;
+    -webkit-border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Montserrat SemiBold', sans-serif;
+    color: #777777;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    line-height: 42px;
+    float: right;
+    margin-top: 10px;
+}
+.rectangle_pink_2 .send_box .button a:hover {
+    background: #E9EAED;
+    transition: 1s;
+}
+.rectangle_pink_2 .vertical_line {
+    border-left: 2px solid #707070;
+    height: 550px;
+    left: 52%;
+    margin-left: -40px;
+    margin-top: 80px;
+    top: 0;
+    transition: 0.5s all;
+}
+.rectangle_bot {
+    display: flex;
+    height: 300px;
+    background: #131F3B;
+    flex-direction: column;
+}
+.rectangle_bot .footer_text_head {
+    font-size: 20px;
+    font-family: 'Montserrat Regular', sans-serif;
+    color: #B7B7B7;
+    margin-left: 165px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1600px) {
+    .part_2 .text {
+        margin-right: 180px;
+    }
+    .part_2 ul li p{
+        font-size: 30px;
+    }
+    .part_2 .text_hello {
+        font-size: 50px;
+        color: #777777;
+    }
+    .part_2 .text_info {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 1501px) {
+    .part_2 {
+        height: 800px;
+    }
+    .part_2 .text {
+        margin-right: 105px;
+    }
+    .rectangle_pink_2 .vertical_line {
+        border-left: 0 solid #707070;
+        display: none;
+    }
+    .rectangle_pink_2 {
+        height: 1000px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .white_box_1 {
+        margin-top: -290px;
+        line-height: 20px;
+    }
+    .rectangle_pink_2 .send_box {
+        margin: 300px 0 150px 70px;
+    }
+
+
+}
+@media screen and (max-width: 1340px) {
+    .part_2 {
+        height: 800px;
+    }
+    .part_2 .text {
+
+        margin-right: 25px;
+    }
+    .container_hobby {
+        margin-left: 100px;
+    }
+    .container_hobby {
+         flex-direction: column;
+         margin-left: 370px;
+     }
+    .container_skills p {
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 1240px) {
+    .part_2 img {
+        margin-left: 400px;
+    }
+    .part_2 .text {
+        margin-left: 400px;
+    }
+    .part_2 {
+        height: 1270px;
+    }
+    .container_hobby {
+        flex-direction: column;
+        margin-left: 270px;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .part_2 img {
+        margin-left: 300px;
+    }
+    .part_2 .text {
+        margin-left: 300px;
+    }
+    .container_hobby {
+        flex-direction: column;
+        margin-left: 250px;
+    }
+    .container_skills {
+        flex-direction: column;
+    }
+    .container_skills_element_1 img {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .part_2 img {
+        margin-left: 200px;
+    }
+    .part_2 .text {
+        margin-left: 200px;
+    }
+    .container_hobby {
+        flex-direction: column;
+        margin-left: 190px;
+    }
+}
